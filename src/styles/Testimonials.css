@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.Main {
+    background-color: #F7FDFF;
+    height:auto;
+    min-height: 484px;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.Content {
+    height: auto;
+    max-width: 1240px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.person > div {
+    flex: 1;
+    min-width: 150px; /* Adjust this value as needed */
+    max-width: 100%;
+}
+
+.person img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        padding: 30px 10px;
+    }
+
+    .Content {
+        padding: 20px;
+    }
+
+    .Heading {
+        justify-content: center;
+    }
+
+    .person {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .person > div {
+        width: 100%;
+        max-width: 400px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Main {
+        padding: 20px 5px;
+        height:auto;
+    }
+
+    .Content {
+        padding: 15px;
+        height:auto;
+    }
+
+    .Heading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .person {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .person img {
+        max-width: 100%;
+    }
+}
