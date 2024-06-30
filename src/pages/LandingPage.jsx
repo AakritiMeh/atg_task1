@@ -18,8 +18,12 @@ function SignIn(){
             </div>
             <br></br>
             <div className="ep">
+                <div className="inpSJ">
                 <input placeholder="Email" type="text"></input>
+                </div>
+                <div className="inpSJ">
                 <input placeholder="Password"  type="text"></input>
+                </div>
                 <div className="rememberForgot">
                     <label className="rememberMe">
                         <input type="checkbox" />
@@ -46,10 +50,14 @@ function JoinIn(){
             </div>
             <br></br>
             <div className="ep">
-                <input placeholder="Email" type="text"></input>
-                <input placeholder="Password"  type="text"></input>
+                <div className="inpSJ">
+                    <input placeholder="Email" type="text"></input>
+                </div>
+                <div className="inpSJ">
+                    <input placeholder="Password"  type="text"></input>
+                </div>
                 <div className="PasswordStrength">Password Strength</div>
-                <div className="Button">
+                <div className="AACButton">
                     <img src={aac} width="440"></img>
                 </div>
 
@@ -63,13 +71,11 @@ function JoinIn(){
 const LandingPage = () => {
     const [activeTab, setActiveTab] = useState('signin');
   return (
-    <div className="Main">
-        {/* <div className="NavBar">
+    <div className="LandingMain">
 
-        </div> */}
-        <div className="Content">
+        <div className="LandingContent">
             <div className="leftComponent">
-                <div className="Heading">
+                <div className="LCHeading">
                     Explore your 
                     <span className="hobby-text"> hobby </span> 
                     or 
@@ -77,12 +83,12 @@ const LandingPage = () => {
                     <br />
                     <br />
                 </div>
-                <div className="description">
+                <div className="LCdescription">
                 Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…<br />
                 If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products,  services or events.  Hop on your hobbyhorse and enjoy the ride.<br />
                 <br />
                 </div>
-                <div className="image">
+                <div className="LCimage">
                     <img src={People} alt="image"></img>
                 </div>
             </div>
