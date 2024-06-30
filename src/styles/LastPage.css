@@ -80,6 +80,12 @@
   border: gainsboro;
 }
 
+@media (max-width:965px) {
+  .ArrowUp {
+    display: none; 
+  }
+}
+
 @media (max-width: 768px) {
   .Heading {
     font-size: 2rem;

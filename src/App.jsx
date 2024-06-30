@@ -7,7 +7,7 @@ import LandingPage from "./pages/LandingPage"
 import Navbar from "./components/Navbar"
 import Features from "./pages/Features"
 import Footer from "./pages/Footer"
-
+import Copyright from './pages/Copyright'
 import "./App.css"
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
       <Testimonials />
       <Lastpage />
       <Footer />
+      <Copyright />
   
     </>
   )
