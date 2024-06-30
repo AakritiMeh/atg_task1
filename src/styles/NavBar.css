@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.Main {
+.NBMain {
     height: 80px;
     font-family: "Poppins";
     background-color: #ffffff;
@@ -11,7 +11,7 @@
     padding: 0 97px;
 }
 
-.Logo img {
+.NBLogo img {
     width: 293.26px;
     height: auto;
 }
@@ -156,18 +156,12 @@
 }
 
 
-@media screen and (min-width: 769px) {
-    .ExploreDropdown {
-        display: block;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .Main {
+    .NBMain {
         padding: 0 20px;
     }
 
-    .Logo img {
+    .NBLogo img {
         width: 150px;
     }
 
@@ -203,5 +197,46 @@
         width: 24px;
         height: 24px;
         cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .NBMain {
+        padding: 0 40px;
+    }
+
+    .snc {
+        gap: 15px;
+    }
+
+    .SearchBar {
+        width: 40px;
+    }
+
+    .searchtext {
+        display: none;
+    }
+
+    .searchimage {
+        border-radius: 8px;
+    }
+
+    .Explore, .Hobbies {
+        width: 24px;
+        overflow: hidden;
+    }
+
+    .Explore span, .Hobbies span, .Explore img[alt="downarrow"], .Hobbies img[alt="downarrow"] {
+        display: none;
+    }
+
+    .Explore img:first-child, .Hobbies img:first-child {
+        margin-right: 0;
+    }
+
+    .signinButton button {
+        width: auto;
+        padding: 0 10px;
     }
 }

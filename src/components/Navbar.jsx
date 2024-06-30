@@ -30,8 +30,8 @@ const Navbar = () => {
     }, [showExploreDropdown]);
     return (
         <div className="NavbarContainer">
-            <div className="Main">
-                <div className="Logo">
+            <div className="NBMain">
+                <div className="NBLogo">
                     <img src={fullLogo} alt="logo" />
                 </div>
                 <div className="SearchBar">
