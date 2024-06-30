@@ -1,7 +1,7 @@
 
 
 import Testimonials from './pages/Testimonials'
-// import AddYourOwn from './pages/AddYourOwn'
+import AddYourOwn from './pages/AddYourOwn'
 import Lastpage from "./pages/Lastpage"
 // import LandingPage from "./pages/LandingPage"
 // import Navbar from "./components/Navbar"
@@ -17,8 +17,8 @@ function App() {
       
       {/* <Navbar />
       <LandingPage />
-      <Features />
-      <AddYourOwn /> */}
+      <Features /> */}
+      <AddYourOwn />
       <Testimonials />
       <Lastpage />
       <Footer />

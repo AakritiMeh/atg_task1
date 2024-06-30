@@ -2,7 +2,7 @@
 
 
 
-.Main{
+.AYOMain{
     background-color: #F7FDFF;
     ;
     height: 484px;
@@ -14,7 +14,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.Content{
+.AYOContent{
     height:244px;
     width: 1240px;
     align-items: flex-start;
@@ -26,14 +26,14 @@
     gap:20px;
 }
 
-.Heading{
+.AYOHeading{
     display: flex;
     flex-direction: row;
     gap:20px;
     align-items: center;
 }
 
-button {
+.AYOButton button {
     background-color: white;
     color: #8064A2;
     border: 1px solid #8064A2;
