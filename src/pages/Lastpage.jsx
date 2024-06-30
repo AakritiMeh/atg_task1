@@ -11,13 +11,16 @@ const Lastpage = () => {
             <span className="highlight community">Community</span>
             <span>...</span>
         </div>
-        <div className="Button">
-            <button>Get Started</button>
+        <div className="nextline">
+            <div className="Button">
+                <button>Get Started</button>
+            </div>
+            <div className="ArrowUp">
+                <img src={Arrow} alt="arrow"></img>
+                <div className="TextForArrow">Go To Top ( Ctrl + Home )</div>
+            </div>
         </div>
-        <div className="ArrowUp">
-            <img src={Arrow} alt="arrow"></img>
-            <div className="TextForArrow">Go To Top ( Ctrl + Home )</div>
-        </div>
+
         <div className="Image">
             <img src={People} alt="image"></img>
         </div>

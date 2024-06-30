@@ -1,0 +1,70 @@
+.Main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Hobbycue, .HowDoI, .QuickLinks {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.Hobbycue > div:first-child,
+.HowDoI > div:first-child,
+.QuickLinks > div:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.c1comp, .c2comp, .c3comp {
+    display: flex;
+    flex-direction: column;
+}
+
+.c1comp div, .c2comp div, .c3comp div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.SocialMedia {
+    margin-bottom: 20px;
+}
+
+.SocialMedia img {
+    max-width: 100%;
+}
+
+.InviteFriends {
+    display: flex;
+}
+
+.InviteFriends input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.InviteFriends button {
+    padding: 10px 20px;
+    background-color: #8064A2;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column;
+    }
+
+    .Hobbycue, .HowDoI, .QuickLinks {
+        margin-bottom: 30px;
+    }
+}
