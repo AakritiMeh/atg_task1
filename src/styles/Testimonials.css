@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.Main {
+.TestimonMain {
     background-color: #F7FDFF;
     height:auto;
     min-height: 484px;
@@ -14,7 +14,7 @@
 
 }
 
-.Content {
+.TestimonContent {
     height: auto;
     max-width: 1240px;
     width: 100%;
@@ -28,7 +28,7 @@
     overflow-y: hidden;
 }
 
-.Heading {
+.TestimonHeading {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -36,7 +36,7 @@
     flex-wrap: wrap;
 }
 
-.person {
+.Testimonperson {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -44,70 +44,70 @@
     justify-content: center;
 }
 
-.person > div {
+.Testimonperson > div {
     flex: 1;
     min-width: 150px; /* Adjust this value as needed */
     max-width: 100%;
 }
 
-.person img {
+.Testimonperson img {
     max-width: 100%;
     height: auto;
 }
 
 @media (max-width: 768px) {
-    .Main {
+    .TestimonMain {
         padding: 30px 10px;
     }
 
-    .Content {
+    .TestimonContent {
         padding: 20px;
     }
 
-    .Heading {
+    .TestimonHeading {
         justify-content: center;
     }
 
-    .person {
+    .Testimonperson {
         flex-direction: column;
         align-items: center;
     }
 
-    .person img{
+    .Testimonperson img{
         max-width: 100%;
         height: auto;
     }
 
-    .person > div {
+    .Testimonperson > div {
         width: 100%;
         max-width: 400px; 
     }
 }
 
 @media (max-width: 480px) {
-    .Main {
+    .TestimonMain {
         padding: 20px 5px;
         height:auto;
     }
 
-    .Content {
+    .TestimonContent {
         padding: 15px;
         height:auto;
     }
 
-    .Heading {
+    .TestimonHeading {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .person {
+    .Testimonperson {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
     }
 
-    .person img {
+    .Testimonperson img {
         max-width: 100%;
     }
 }
