@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.Main {
+    height: 80px;
+    font-family: "Poppins";
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 97px;
+}
+
+.Logo img {
+    width: 293.26px;
+    height: auto;
+}
+
+.SearchBar {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 40px;
+    align-items: center;
+}
+
+.searchtext {
+    flex-grow: 1;
+}
+
+.searchtext input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-family: "Poppins";
+    border: 1px solid #EBEDF0;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+.searchimage {
+    background-color: #8064A2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+}
+
+.searchimage img {
+    width: 20px;
+    height: 20px;
+}
+
+.ExpHobbies {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.Explore, .Hobbies {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.snc {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.snc img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.signinButton button {
+    font-family: "Poppins";
+    width: 112px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #8064A2;
+    background-color: transparent;
+    color: #8064A2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signinButton button:hover {
+    background-color: #8064A2;
+    color: white;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.show-mobile {
+    display: none;
+}
+
+
+
+.ExploreDropdown {    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:80px;  
+    left:45%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ExploreDropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.ExploreDropdown li {
+    width:200px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+
+
+.ExploreDropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+@media screen and (min-width: 769px) {
+    .ExploreDropdown {
+        display: block;
+    }
+}
+
+/* Existing CSS remains the same */
+@media screen and (min-width: 769px) {
+    .ExploreDropdown {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Main {
+        padding: 0 20px;
+    }
+
+    .Logo img {
+        width: 150px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+    }
+
+    .SearchBar {
+        width: auto;
+    }
+
+    .searchtext {
+        display: none;
+    }
+
+    .searchimage {
+        border-radius: 8px;
+    }
+
+    .ExpHobbies {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menuIcon img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+}
