@@ -63,22 +63,23 @@
 }
 
 @media (max-width: 768px) {
-    .Main {
+    .FooterMain {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .FooterSection {
+    .HowDoI .QuickLinks .HobbyCue .SocialMedia {
         flex: 1 1 calc(50% - 20px);
     }
 }
 
 @media (max-width: 500px) {
-    .Main {
+    .FooterMain {
         flex-direction: column;
+        align-items: center;
     }
 
-    .FooterSection {
+    .HowDoI .QuickLinks .HobbyCue .SocialMedia {
         flex: 1 1 100%;
         margin-right: 0;
     }
