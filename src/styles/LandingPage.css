@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.Main{
+    font-family: "Poppins";
+}
+
+.Heading {
+    color: black;
+    font-family: "Poppins";
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+  
+.hobby-text {
+    color: #0096C8;
+}
+  
+.passion-text {
+    color: #8064A2;
+}
+
+.description{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+.leftComponent{
+    width:50vw;
+    padding:100px 100px;
+}
+
+.leftComponent img{
+    width: 697.07px;
+    height: 216px;
+    top: 462px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.Content{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+}
+
+.rightComponent{
+    width:50vw;
+    padding:150px 100px;
+}
+
+.fg{
+    display:flex;
+    flex-direction: column;
+    gap:15px
+}
+
+.fg img{
+    cursor:pointer;
+}
+
+.ep{
+    display:flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.ep input {
+    width: 440px;
+    height: 40px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    cursor:pointer;
+}
+
+
+.rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 44px;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rememberMe input[type="checkbox"] {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.rememberMe span {
+    font-size: 12px;
+}
+
+.forgotPassword {
+    cursor: pointer;
+}
+
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tabs div {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs .SignIn,
+.tabs .JoinIn {
+    color: #939CA3;
+}
+
+.tabs .SignIn.active,
+.tabs .JoinIn.active {
+    color: #8064A2;
+    border-bottom: 2px solid #8064A2;
+}
+
+.PasswordStrength{
+    font-size: 12px;
+    font-family:"Poppins";
+}
+
+
+
+
+.rightComponent {
+    width: 50vw;
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.fg, .ep {
+    width: 100%;
+    max-width: 440px; 
+}
+
+.fg img, .ep input, .rememberForgot, .continueButton img {
+    width: 100%;
+    max-width: 440px;
+}
+
+.rememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0; 
+}
+
+
+@media screen and (max-width: 1200px) {
+    .leftComponent, .rightComponent {
+        padding: 50px;
+    }
+
+    .leftComponent img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .leftComponent, .rightComponent {
+        width: 100%;
+        padding: 50px;
+        max-width: 600px; 
+    }
+
+    .Heading {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leftComponent, .rightComponent {
+        padding: 30px;
+    }
+
+    .Heading {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .description {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .tabs div {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .leftComponent, .rightComponent {
+        padding: 20px;
+    }
+
+    .Heading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .description {
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .tabs div {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
