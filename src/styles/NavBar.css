@@ -201,13 +201,13 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1260px) {
     .NBMain {
         padding: 0 40px;
     }
 
     .snc {
-        gap: 15px;
+        gap: 10px;
     }
 
     .SearchBar {
@@ -227,7 +227,7 @@
         overflow: hidden;
     }
 
-    .Explore span, .Hobbies span, .Explore img[alt="downarrow"], .Hobbies img[alt="downarrow"] {
+    .Explore span, .Hobbies span, .Explore img[alt="down arrow"], .Hobbies img[alt="downarrow"] {
         display: none;
     }
 
