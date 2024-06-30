@@ -2,9 +2,9 @@ import social from "../assets/SocialMedia.png"
 import "../styles/Footer.css"
 const Footer = () => {
   return (
-    <div className="Main">
+    <div className="FooterMain">
         <div className="Hobbycue">
-            <div>
+            <div className="FooterHeading">
                 Hobbycue
             </div>
             <div className="c1comp">
@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="HowDoI">
-            <div>
+            <div className="FooterHeading">
                 How Do I
             </div>
             <div className="c2comp">
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="QuickLinks">
-            <div>
+            <div  className="FooterHeading">
                 Quick Links
             </div>
             <div className="c3comp">
@@ -41,6 +41,7 @@ const Footer = () => {
         </div>
         <div>
             <div className="SocialMedia">
+                <div className="FooterHeading">Social Media</div>
                 <img src={social}></img>
             </div>
             <div className="InviteFriends">

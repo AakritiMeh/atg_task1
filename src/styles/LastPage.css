@@ -1,110 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.Main{
-    font-family: "Poppins";
-}
 
-.Heading {
-    font-size: 36px;
-    font-weight: 700;
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-    font-family: "Poppins";
-    font-style: italic;
-}
-  
-.Heading .highlight {
-    margin: 0 4px;
-}
-  
-.Heading .hobby {
-    color: #8064A2;
-}
-  
-.Heading .community {
-    color: #0096C8;
+
+.LastPageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins";
+  background-color: #F7FDFF;
 }
 
-button{
-    color:white;
-    background-color: #8064A2;
-    border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: none;
-    padding:8px, 16px, 8px, 16px;
-    gap:10px;
-    justify-content: flex-start;
-    font-family: "Poppins";
-    font-size: 20px;
-    font-weight: 600;
-    
+.HeadingLastPage {
+  font-size: 36px;
+  line-height: 54px;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+
 }
 
-.ArrowUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.highlight {
+  font-weight: bold;
 }
 
+.hobby {
+  color: #8e44ad;
+}
+
+.community {
+  color: #3498db;
+}
+
+.nextline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.Button button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ArrowUp {
+  display: flex;
+  flex-direction: column;;
+  align-items: center;
+}
+
+.ArrowUp img {
+  width: 60px;
+  height: 60px;
+ 
+}
+
+.TextForArrow {
+  font-size: 0.9rem;
+  color: #666;
+}
 
 .Image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+  width: 100%;
+  max-width: 800px;
 }
-  
+
 .Image img {
-    max-width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  border: gainsboro;
 }
-
-  
-@media (max-width: 768px) {
-    .Heading {
-      font-size: 28px;
-    }
-}
-  
-@media (max-width: 480px) {
-    .Heading {
-      font-size: 24px;
-    }
-}
-
 
 @media (max-width: 768px) {
-    .Heading {
-      font-size: 28px;
-    }
-  
-    .Button button {
-      font-size: 16px;
-    }
+  .Heading {
+    font-size: 2rem;
+  }
+
+  .nextline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Button {
+    margin-bottom: 1rem;
+  }
 }
-  
-@media (max-width: 480px) {
-    .Heading {
-      font-size: 24px;
-    }
-  
-    .Button button {
-      font-size: 14px;
-    }
-  
-    .ArrowUp {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .ArrowUp img {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
+
+@media (max-width: 500px) {
+  .Heading {
+    font-size: 1.5rem;
+  }
+
+  .Button button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .ArrowUp {
+    display: none; 
+  }
 }

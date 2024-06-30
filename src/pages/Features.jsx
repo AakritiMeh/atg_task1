@@ -15,7 +15,7 @@ const prodDesc="Find equipment or supplies required for your hobby.  Buy, rent o
 const progDesc="Find events, meetups and workshops related to your hobby.  Register or buy tickets online.";
 const Features = () => {
     return (
-      <div className="Main">
+      <div className="FeaturesMain">
         <div className="BoxWrapper">
           <Box 
             defaultImageSource={people}

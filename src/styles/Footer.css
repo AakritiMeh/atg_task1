@@ -1,26 +1,29 @@
-.Main {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.FooterMain {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 20px;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins";
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.Hobbycue, .HowDoI, .QuickLinks {
+.HowDoI .QuickLinks .HobbyCue .SocialMedia{
     flex: 1;
+    min-width: 200px;
     margin-right: 20px;
+    margin-bottom: 30px;
 }
 
-.Hobbycue > div:first-child,
-.HowDoI > div:first-child,
-.QuickLinks > div:first-child {
+.FooterHeading {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.c1comp, .c2comp, .c3comp {
+.c1comp div, .c2comp div, .c3comp div {
     display: flex;
     flex-direction: column;
 }
@@ -61,10 +64,22 @@
 
 @media (max-width: 768px) {
     .Main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .FooterSection {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .Main {
         flex-direction: column;
     }
 
-    .Hobbycue, .HowDoI, .QuickLinks {
-        margin-bottom: 30px;
+    .FooterSection {
+        flex: 1 1 100%;
+        margin-right: 0;
     }
 }

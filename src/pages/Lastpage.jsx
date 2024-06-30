@@ -1,10 +1,11 @@
 import Arrow from "../assets/TopArrow.png"
 import People from "../assets/PeopleDancingComponent.png"
 import "../styles/LastPage.css"
+
 const Lastpage = () => {
   return (
-    <div className="Main">
-        <div className="Heading">
+    <div className="LastPageMain">
+        <div className="HeadingLastPage">
             <span>Your </span>
             <span className="highlight hobby">Hobby</span>
             <span>, Your </span>
@@ -20,10 +21,12 @@ const Lastpage = () => {
                 <div className="TextForArrow">Go To Top ( Ctrl + Home )</div>
             </div>
         </div>
+        <br />
 
         <div className="Image">
             <img src={People} alt="image"></img>
         </div>
+        
 
     </div>
 
